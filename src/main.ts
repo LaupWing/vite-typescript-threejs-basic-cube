@@ -8,6 +8,8 @@ import {
    WebGLRenderer,
 } from "three"
 
+console.log(Scene)
+
 const container = document.querySelector(".webgl")!
 
 const scene = new Scene()
