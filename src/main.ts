@@ -8,8 +8,6 @@ import {
    WebGLRenderer,
 } from "three"
 
-console.log(Scene)
-
 const container = document.querySelector(".webgl")!
 
 const scene = new Scene()
@@ -23,7 +21,7 @@ const far = 100
 
 const camera = new PerspectiveCamera(fov, aspect, near, far)
 
-camera.position.set(0, 0, 10)
+camera.position.set(1, 1, 10)
 
 const geometry = new BoxGeometry(2, 2, 2)
 
