@@ -32,11 +32,12 @@ const cube = new Mesh(geometry, material)
 
 scene.add(cube)
 
-const renderer = new WebGLRenderer()
+const renderer = new WebGLRenderer({
+   canvas: container
+})
 
 renderer.setSize(container.clientWidth, container.clientHeight)
 
 renderer.setPixelRatio(window.devicePixelRatio)
 
-container.append(renderer.domElement)
 renderer.render(scene, camera)
