@@ -16,9 +16,7 @@ export default class Renderer {
       this.camera = this.experience.camera
       this.sizes = this.experience.sizes
       this.instance = new THREE.WebGLRenderer({
-         canvas: this.canvas,
-         antialias: true,
-         alpha: true
+         canvas: this.canvas
       })
 
       console.log(this.instance)
