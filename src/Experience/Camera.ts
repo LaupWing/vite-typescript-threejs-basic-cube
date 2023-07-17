@@ -19,7 +19,7 @@ export default class Camera {
          0.1,
          100
       )
-      this.instance.position.set(1, 1, 10)
+      this.instance.position.set(0, 1, 10)
       
    }
 }
