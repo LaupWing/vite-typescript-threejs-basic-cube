@@ -21,6 +21,5 @@ export default class Experience {
       this.scene.add(this.basicCube.instance)
       this.renderer = new Renderer(this)
       this.renderer.instance.render(this.scene, this.camera.instance)
-      
    }
 }
