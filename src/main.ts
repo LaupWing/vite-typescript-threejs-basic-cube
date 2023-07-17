@@ -1,16 +1,19 @@
 import "./style.css"
-import {
-   BoxGeometry,
-   Color,
-   Mesh,
-   MeshBasicMaterial,
-   PerspectiveCamera,
-   Scene,
-   WebGLRenderer,
-} from "three"
+// import {
+//    BoxGeometry,
+//    Color,
+//    Mesh,
+//    MeshBasicMaterial,
+//    PerspectiveCamera,
+//    Scene,
+//    WebGLRenderer,
+// } from "three"
+import Experience from "./Experience/Experience"
 
-const container = document.querySelector(".webgl")!
+const container = document.querySelector(".webgl") as HTMLCanvasElement
 
+
+new Experience(container)
 // const scene = new Scene()
 
 // scene.background = new Color("skyblue")
