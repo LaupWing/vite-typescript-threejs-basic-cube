@@ -21,6 +21,8 @@ export default class Renderer {
          alpha: true
       })
 
+      console.log(this.instance)
+
       this.instance.setSize(this.sizes.width, this.sizes.height)
       this.instance.setPixelRatio(Math.min(window.devicePixelRatio, 2))
    }
