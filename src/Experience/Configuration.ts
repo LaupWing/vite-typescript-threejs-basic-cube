@@ -5,9 +5,9 @@ export default class Configuration {
         this.color = 0xffccff
     }
 
-    setter(key: any, value: any){
+    setter(key: keyof this, value: any){
         if(this[key] === undefined){
-            
+            throw Error("Configuration item is not available")
         }
     }
 }
