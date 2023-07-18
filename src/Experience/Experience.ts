@@ -3,11 +3,13 @@ import Sizes from "./utils/Sizes"
 import Camera from "./Camera"
 import BasicCube from "./BasicCube"
 import Renderer from "./Renderer"
+import Configuration from "./Configuration"
 
 export default class Experience {
    public canvas: HTMLCanvasElement
    public scene: THREE.Scene
    public sizes: Sizes
+   public config: Configuration
    public camera: Camera
    public basicCube: BasicCube
    public renderer: Renderer
@@ -17,7 +19,8 @@ export default class Experience {
       this.scene = new THREE.Scene()
       this.sizes = new Sizes()
       this.camera = new Camera(this)
-      this.basicCube = new BasicCube(0xffccff)
+      this.config = new Configuration()
+      this.basicCube = new BasicCube(this.config.color)
       this.scene.add(this.basicCube.instance)
       this.renderer = new Renderer(this)
       this.renderer.instance.render(this.scene, this.camera.instance)
