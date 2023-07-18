@@ -11,13 +11,23 @@
 <body>
    <canvas class="webgl inset-0 fixed w-screen h-screen"></canvas>
    <div class="bottom-10 fixed left-0 right-0 flex justify-center">
-      <ul class="flex bg-white z-50 fixed bottom-10 px-4 py-2 rounded mx-auto">
+      <ul class="flex items-center bg-white z-50 fixed bottom-10 px-4 py-2 rounded mx-auto">
          <li>
             <button class="px-2 rounded bg-red-400 py-1 font-bold text-white">Start</button>
          </li>
-         <li>
-            <label for="default-range" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Default range</label>
-            <input id="default-range" type="range" value="50" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
+         <li class="flex flex-col">
+            <label 
+               for="default-range" 
+               class="block mb-2 text-sm font-medium text-gray-900 "
+            >
+               Default range
+            </label>
+            <input 
+               id="default-range" 
+               type="range" 
+               value="50" 
+               class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
+            >
          </li>
          <li>Test</li>
       </ul>
