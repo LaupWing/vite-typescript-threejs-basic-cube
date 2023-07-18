@@ -7,7 +7,9 @@ export default class BasicCube {
 
    constructor() {
       this.geometry = new THREE.BoxGeometry(1, 1, 1)
-      this.material = new THREE.MeshBasicMaterial()
+      this.material = new THREE.MeshBasicMaterial({
+         color: "orange"
+      })
       this.instance = new THREE.Mesh(this.geometry, this.material)
    }
 }
