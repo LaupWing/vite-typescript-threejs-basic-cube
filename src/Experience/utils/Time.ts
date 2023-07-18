@@ -9,6 +9,13 @@ export default class Time extends EventEmitter {
     public clock: THREE.Clock
 
     constructor() {
+        super()
+        this.start = Date.now()
+        this.current = this.start
+        this.elapsed = 0
+        this.delta = 0
+        this.clock = new THREE.Clock()
 
+    
     }
 }
