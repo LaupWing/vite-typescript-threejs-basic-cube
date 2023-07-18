@@ -5,10 +5,10 @@ export default class BasicCube {
    private material: THREE.MeshBasicMaterial
    public instance: THREE.Mesh
 
-   constructor() {
+   constructor(color: number) {
       this.geometry = new THREE.BoxGeometry(1, 1, 1)
       this.material = new THREE.MeshBasicMaterial({
-         color: "orange"
+         color: color
       })
       this.instance = new THREE.Mesh(this.geometry, this.material)
    }
