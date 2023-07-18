@@ -4,4 +4,10 @@ export default class Configuration {
     constructor() {
         this.color = 0xffccff
     }
+
+    setter(key: any, value: any){
+        if(this[key] === undefined){
+            
+        }
+    }
 }
