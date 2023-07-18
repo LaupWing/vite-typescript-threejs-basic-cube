@@ -9,5 +9,6 @@ export default class Configuration {
         if(this[key] === undefined){
             throw Error("Configuration item is not available")
         }
+        this[key] = value
     }
 }
