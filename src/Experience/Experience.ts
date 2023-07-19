@@ -28,6 +28,12 @@ export default class Experience {
       this.renderer = new Renderer(this)
       this.renderer.instance.render(this.scene, this.camera.instance)
 
-      
+      this.time.on("tick", () => {
+         this.update()
+      })
+   }
+
+   update() {
+      // this.camera.
    }
 }
