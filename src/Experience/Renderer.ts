@@ -19,9 +19,11 @@ export default class Renderer {
          canvas: this.canvas
       })
 
-      console.log(this.instance)
-
       this.instance.setSize(this.sizes.width, this.sizes.height)
       this.instance.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+   }
+
+   update(){
+      this.instance.render(this.scene, this.camera.instance)
    }
 }
