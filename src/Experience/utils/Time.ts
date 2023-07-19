@@ -16,6 +16,12 @@ export default class Time extends EventEmitter {
         this.delta = 0
         this.clock = new THREE.Clock()
 
-    
+        window.requestAnimationFrame(() => {
+            this.tick()
+        })
+    }
+
+    tick(){
+        
     }
 }
