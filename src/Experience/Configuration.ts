@@ -5,7 +5,7 @@ export default class Configuration {
     constructor() {
         this.color_element = document.querySelector("#color") as HTMLInputElement
         this.color = Number(this.color_element.value)
-        console.log(this.color_element.value)
+        this.attachEvents()
     }
 
     setter(key: keyof this, value: any){
@@ -13,5 +13,14 @@ export default class Configuration {
             throw Error("Configuration item is not available")
         }
         this[key] = value
+    }
+
+    attachEvents(){
+        this.color_element.addEventListener("change", this.updateColor.bind(this))
+    }
+
+    updateColor()
+    {
+        this.color = 0xffffff
     }
 }
