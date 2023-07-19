@@ -34,6 +34,6 @@ export default class Experience {
    }
 
    update() {
-      // this.camera.
+      this.renderer.update()
    }
 }
