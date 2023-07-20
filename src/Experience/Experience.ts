@@ -22,7 +22,7 @@ export default class Experience {
       this.sizes = new Sizes()
       this.camera = new Camera(this)
       this.time = new Time()
-      this.config = new Configuration()
+      this.config = new Configuration(this)
       this.basicCube = new BasicCube(this.config.color)
       this.scene.add(this.basicCube.instance)
       this.renderer = new Renderer(this)
