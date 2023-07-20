@@ -26,7 +26,8 @@ export default class Configuration {
 
     updateColor()
     {
-        this.basicCube.material.color.setHex(Number(this.color_element.value.replace("#", "0x")))
-        this.color = 0xffffff
+        const color = Number(this.color_element.value.replace("#", "0x"))
+        this.basicCube.material.color.setHex(color)
+        this.color = color
     }
 }
