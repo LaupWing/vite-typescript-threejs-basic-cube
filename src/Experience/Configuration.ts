@@ -13,7 +13,8 @@ export default class Configuration {
         this.attachEvents()
     }
 
-    attachEvents(){
+    attachEvents()
+    {
         this.color_element.addEventListener("change", this.updateColor.bind(this))
     }
 
