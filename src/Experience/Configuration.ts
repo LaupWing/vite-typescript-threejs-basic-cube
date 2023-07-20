@@ -13,13 +13,6 @@ export default class Configuration {
         this.attachEvents()
     }
 
-    setter(key: keyof this, value: any){
-        if(this[key] === undefined){
-            throw Error("Configuration item is not available")
-        }
-        this[key] = value
-    }
-
     attachEvents(){
         this.color_element.addEventListener("change", this.updateColor.bind(this))
     }
