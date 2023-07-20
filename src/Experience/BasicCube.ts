@@ -1,8 +1,8 @@
 import * as THREE from "three"
 
 export default class BasicCube {
-   private geometry: THREE.BoxGeometry
-   private material: THREE.MeshBasicMaterial
+   public geometry: THREE.BoxGeometry
+   public material: THREE.MeshBasicMaterial
    public instance: THREE.Mesh
 
    constructor(color: number) {

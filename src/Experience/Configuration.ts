@@ -26,6 +26,7 @@ export default class Configuration {
 
     updateColor()
     {
+        // this.basicCube.
         this.color = 0xffffff
     }
 }
