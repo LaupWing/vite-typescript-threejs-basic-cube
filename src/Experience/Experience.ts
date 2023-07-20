@@ -16,13 +16,17 @@ export default class Experience {
    public basicCube: BasicCube
    public renderer: Renderer
 
+   
+
    constructor (canvas: HTMLCanvasElement) {
+      const initial_color = 0xffccff
+
       this.canvas = canvas
       this.scene = new THREE.Scene()
       this.sizes = new Sizes()
       this.camera = new Camera(this)
       this.time = new Time()
-      this.basicCube = new BasicCube(0xffccff)
+      this.basicCube = new BasicCube(initial_color)
       this.scene.add(this.basicCube.instance)
       this.renderer = new Renderer(this)
       this.config = new Configuration(this)
