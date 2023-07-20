@@ -16,8 +16,6 @@ export default class Experience {
    public basicCube: BasicCube
    public renderer: Renderer
 
-   
-
    constructor (canvas: HTMLCanvasElement) {
       const initial_color = 0xffccff
 
