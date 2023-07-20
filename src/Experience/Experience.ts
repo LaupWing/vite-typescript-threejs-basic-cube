@@ -22,10 +22,10 @@ export default class Experience {
       this.sizes = new Sizes()
       this.camera = new Camera(this)
       this.time = new Time()
-      this.config = new Configuration(this)
-      this.basicCube = new BasicCube(0xffffff)
+      this.basicCube = new BasicCube(0xffccff)
       this.scene.add(this.basicCube.instance)
       this.renderer = new Renderer(this)
+      this.config = new Configuration(this)
       this.renderer.instance.render(this.scene, this.camera.instance)
 
       this.time.on("tick", () => {
