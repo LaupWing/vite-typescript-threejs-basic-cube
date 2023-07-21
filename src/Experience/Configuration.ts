@@ -9,7 +9,7 @@ export default class Configuration {
 
     constructor(experience: Experience) {
         this.color_element = document.querySelector("#color") as HTMLInputElement
-        this.width_element = document.querySelector("#width") as HTMLInputElement
+        this.width_element = document.querySelector("#zAs") as HTMLInputElement
 
         this.color = Number(this.color_element.value)
         this.basicCube = experience.basicCube
@@ -25,7 +25,7 @@ export default class Configuration {
     updateSize()
     {
         const width = Number(this.width_element.value)
-        console.log(width)
+        this.basicCube
     }
 
     updateColor()
