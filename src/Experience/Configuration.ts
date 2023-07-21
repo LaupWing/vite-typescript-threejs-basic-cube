@@ -12,14 +12,19 @@ export default class Configuration {
     private y_axis: Number
     private basicCube: BasicCube
 
-    constructor(experience: Experience) {
+    constructor(
+        experience: Experience,
+        initial_x_scale: number,
+        initial_y_scale: number,
+        initial_z_scale: number
+    ) {
         this.color_element = document.querySelector("#color") as HTMLInputElement
         this.z_scale_element = document.querySelector("#zScale") as HTMLInputElement
         this.y_scale_element = document.querySelector("#yScale") as HTMLInputElement
         this.x_scale_element = document.querySelector("#xScale") as HTMLInputElement
-        this.z_axis = 1
-        this.x_axis = 1
-        this.y_axis = 1
+        this.x_axis = initial_x_scale
+        this.y_axis = initial_y_scale
+        this.z_axis = initial_z_scale
         this.color = Number(this.color_element.value)
         this.basicCube = experience.basicCube
         this.attachEvents()

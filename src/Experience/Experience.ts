@@ -31,7 +31,12 @@ export default class Experience {
       this.basicCube = new BasicCube(initial_color)
       this.scene.add(this.basicCube.instance)
       this.renderer = new Renderer(this)
-      this.config = new Configuration(this)
+      this.config = new Configuration(
+         this,
+         initial_x_scale,
+         initial_y_scale,
+         initial_z_scale
+      )
       this.renderer.instance.render(this.scene, this.camera.instance)
 
       this.time.on("tick", () => {
