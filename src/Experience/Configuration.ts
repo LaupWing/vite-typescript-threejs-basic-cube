@@ -25,10 +25,11 @@ export default class Configuration {
     updateSize(e: Event)
     {
         const target = e.target as HTMLInputElement
-        console.log(target.id)
+        const axis = target.id[0] as "z"|"x"|"y"
+        
         const z_axis = Number(this.z_axis_element.value)
         console.log(z_axis)
-        this.basicCube.instance.scale.z = z_axis
+        this.basicCube.instance.scale[axis] = z_axis
     }
 
     updateColor()
