@@ -24,7 +24,8 @@ export default class Configuration {
 
     updateSize()
     {
-        
+        const width = Number(this.width_element.value)
+        console.log(width)
     }
 
     updateColor()
