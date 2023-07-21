@@ -35,9 +35,8 @@ export default class Configuration {
         const target = e.target as HTMLInputElement
         const axis = target.id[0] as "z"|"x"|"y"
         
-        const z_axis = Number(this.z_axis_element.value)
         this[`${axis}_axis`] = Number(target.value)
-        this.basicCube.instance.scale[axis] = z_axis
+        this.basicCube.instance.scale[axis] = this[`${axis}_axis`] as number
     }
 
     updateColor()
