@@ -14,9 +14,9 @@ export default class Configuration {
 
     constructor(experience: Experience) {
         this.color_element = document.querySelector("#color") as HTMLInputElement
-        this.z_scale_element = document.querySelector("#zAxis") as HTMLInputElement
-        this.y_scale_element = document.querySelector("#yAxis") as HTMLInputElement
-        this.x_scale_element = document.querySelector("#xAxis") as HTMLInputElement
+        this.z_scale_element = document.querySelector("#zScale") as HTMLInputElement
+        this.y_scale_element = document.querySelector("#yScale") as HTMLInputElement
+        this.x_scale_element = document.querySelector("#xScale") as HTMLInputElement
         this.z_axis = 1
         this.x_axis = 1
         this.y_axis = 1
