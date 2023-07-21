@@ -4,12 +4,12 @@ import Experience from "./Experience"
 export default class Configuration {
     public color: number
     private color_element: HTMLInputElement
-    private width_element: HTMLInputElement
+    private zAs_element: HTMLInputElement
     private basicCube: BasicCube
 
     constructor(experience: Experience) {
         this.color_element = document.querySelector("#color") as HTMLInputElement
-        this.width_element = document.querySelector("#zAs") as HTMLInputElement
+        this.zAs_element = document.querySelector("#zAs") as HTMLInputElement
 
         this.color = Number(this.color_element.value)
         this.basicCube = experience.basicCube
@@ -19,13 +19,13 @@ export default class Configuration {
     attachEvents()
     {
         this.color_element.addEventListener("change", this.updateColor.bind(this))
-        this.width_element.addEventListener("change", this.updateSize.bind(this))
+        this.zAs_element.addEventListener("change", this.updateSize.bind(this))
     }
 
     updateSize()
     {
-        const width = Number(this.width_element.value)
-        this.basicCube
+        const width = Number(this.zAs_element.value)
+        this.basicCube.instance.scale.z = 2
     }
 
     updateColor()
