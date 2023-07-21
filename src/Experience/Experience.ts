@@ -18,6 +18,10 @@ export default class Experience {
 
    constructor (canvas: HTMLCanvasElement) {
       const initial_color = 0xffccff
+      const initial_x_scale = 1
+      const initial_y_scale = 1
+      const initial_z_scale = 1
+
 
       this.canvas = canvas
       this.scene = new THREE.Scene()
