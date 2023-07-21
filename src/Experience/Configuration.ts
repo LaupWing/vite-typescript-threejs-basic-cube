@@ -25,7 +25,7 @@ export default class Configuration {
     updateSize()
     {
         const z_axis = Number(this.z_axis_element.value)
-        this.basicCube.instance.scale.z = 2
+        this.basicCube.instance.scale.z = z_axis
     }
 
     updateColor()
