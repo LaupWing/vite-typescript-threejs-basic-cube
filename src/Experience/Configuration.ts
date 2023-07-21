@@ -19,6 +19,12 @@ export default class Configuration {
     attachEvents()
     {
         this.color_element.addEventListener("change", this.updateColor.bind(this))
+        this.width_element.addEventListener("change", this.updateSize.bind(this))
+    }
+
+    updateSize()
+    {
+        
     }
 
     updateColor()
