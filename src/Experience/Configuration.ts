@@ -4,6 +4,7 @@ import Experience from "./Experience"
 export default class Configuration {
     public color: number
     private color_element: HTMLInputElement
+    private x_axis_element: HTMLInputElement
     private z_axis_element: HTMLInputElement
     private y_axis_element: HTMLInputElement
     private z_axis: Number
@@ -15,6 +16,7 @@ export default class Configuration {
         this.color_element = document.querySelector("#color") as HTMLInputElement
         this.z_axis_element = document.querySelector("#zAxis") as HTMLInputElement
         this.y_axis_element = document.querySelector("#yAxis") as HTMLInputElement
+        this.x_axis_element = document.querySelector("#xAxis") as HTMLInputElement
         this.z_axis = 1
         this.x_axis = 1
         this.y_axis = 1
@@ -28,6 +30,7 @@ export default class Configuration {
         this.color_element.addEventListener("change", this.updateColor.bind(this))
         this.z_axis_element.addEventListener("change", this.updateSize.bind(this))
         this.y_axis_element.addEventListener("change", this.updateSize.bind(this))
+        this.x_axis_element.addEventListener("change", this.updateSize.bind(this))
     }
 
     updateSize(e: Event)
